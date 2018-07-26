@@ -1,0 +1,41 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+    <view class="content" wx:for="{{filminfos}}" wx:key="{{index}}">
+        <image src="{{item.cover.origin}}"/>
+        <view class="textCont">
+            <view class="movie_title"><text class="title">影片介绍</text></view>
+            <view class="director">
+                <text class="prev" decode="true">导&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;演:</text>
+                <text>{{item.director}}</text>
+            </view>
+
+            <view class="actors">
+                <text class="prev" decode="true">主&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;演:</text>
+                <text wx:for="{{item.actors}}" wx:key="{{index}}">{{item.name}} |</text>
+            </view>
+
+            <view class="language">
+                <text class="prev">地区语言:</text>
+                <text>{{item.language}}</text>
+            </view>
+            
+            <view class="category">
+                <text class="prev" decode="true">类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型:</text>
+                <text>{{item.category}}</text>
+            </view>
+            
+            <view class="play_date">
+                <text class="prev">上映日期:</text>
+                <text> 7月6日上映</text>
+            </view>
+            
+            <view class="movie_info">
+                <text class="contText">{{item.synopsis}}</text>
+            </view>
+        </view>
+    </view>
+    <view class='foot_bottom'>
+      <view class="bottom">立即购票</view>
+    </view>
+    
+</view>

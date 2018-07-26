@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/film/film",
+    "pages/cinema/cinema",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#282828",
+    "navigationBarTitleText": "卖座电影",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar":{
+    "color":"#808080",
+    "selectedColor":"#f78360",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "iconPath":"./pages/public/images/home.png",
+        "selectedIconPath":"./pages/public/images/homeSelected.png",
+        "text":"首页"
+      },
+      {
+        "pagePath":"pages/film/film",
+        "iconPath":"./pages/public/images/film.png",
+        "selectedIconPath":"./pages/public/images/filmSelected.png",
+        "text":"电影"
+      },
+      {
+        "pagePath":"pages/cinema/cinema",
+        "iconPath":"./pages/public/images/cinema.png",
+        "selectedIconPath":"./pages/public/images/cinemaSelected.png",
+        "text":"影院"
+      }
+    ]
+  }
+}
